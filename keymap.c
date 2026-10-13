@@ -92,8 +92,8 @@ const uint16_t PROGMEM combo1[]  = {KC_J, KC_K, COMBO_END}; // esc
 const uint16_t PROGMEM combo2[]  = {KC_F, KC_D, COMBO_END}; // esc
 const uint16_t PROGMEM combo3[]  = {KC_J, KC_M, COMBO_END}; // :
 const uint16_t PROGMEM combo4[]  = {KC_K, RGUI_T(KC_COMM), COMBO_END}; // '
-const uint16_t PROGMEM combo5[]  = {KC_V, KC_F, COMBO_END}; // -
-const uint16_t PROGMEM combo6[]  = {KC_D, LGUI_T(KC_C), COMBO_END}; // =
+const uint16_t PROGMEM combo5[]  = {KC_V, KC_F, COMBO_END}; // =
+const uint16_t PROGMEM combo6[]  = {KC_D, LGUI_T(KC_C), COMBO_END}; // -
 const uint16_t PROGMEM combo7[]  = {KC_Q, LSFT_T(KC_A), COMBO_END}; // !
 const uint16_t PROGMEM combo8[]  = {LT(3,KC_S), KC_W, COMBO_END}; // @
 const uint16_t PROGMEM combo9[]  = {KC_D, KC_E, COMBO_END}; // #
@@ -104,14 +104,20 @@ const uint16_t PROGMEM combo13[] = {KC_J, KC_U, COMBO_END}; // &
 const uint16_t PROGMEM combo14[] = {KC_K, KC_I, COMBO_END}; // *
 const uint16_t PROGMEM combo15[] = {LT(3,KC_L), KC_O, COMBO_END}; // (
 const uint16_t PROGMEM combo16[] = {RSFT_T(KC_SCLN), KC_P, COMBO_END}; // )
+const uint16_t PROGMEM combo17[] = {RALT_T(KC_DOT), LT(3,KC_L), COMBO_END}; // "
+const uint16_t PROGMEM combo18[] = {LALT_T(KC_X), LT(3,KC_S), COMBO_END}; // _
+const uint16_t PROGMEM combo19[] = {KC_G, KC_B, COMBO_END}; // ~
+const uint16_t PROGMEM combo20[] = {LT(3,KC_S), LCTL_T(KC_Z), COMBO_END}; // `
+const uint16_t PROGMEM combo21[] = {KC_H, KC_N, COMBO_END}; // |
+const uint16_t PROGMEM combo22[] = {RSFT_T(KC_SCLN), RCTL_T(KC_SLSH), COMBO_END}; // backslash
 
 combo_t key_combos[] = {
     COMBO(combo1, KC_ESC),
     COMBO(combo2, KC_ESC),
     COMBO(combo3, KC_COLN),
     COMBO(combo4, KC_QUOT),
-    COMBO(combo5, KC_MINS),
-    COMBO(combo6, KC_EQL),
+    COMBO(combo5, KC_EQL),
+    COMBO(combo6, KC_MINS),
     COMBO(combo7, KC_EXLM),
     COMBO(combo8, KC_AT),
     COMBO(combo9, KC_HASH),
@@ -122,4 +128,10 @@ combo_t key_combos[] = {
     COMBO(combo14, KC_ASTR),
     COMBO(combo15, KC_LPRN),
     COMBO(combo16, KC_RPRN),
+    COMBO(combo17, KC_DQUO),
+    COMBO(combo18, KC_UNDS),
+    COMBO(combo19, KC_TILD),
+    COMBO(combo20, KC_GRV),
+    COMBO(combo21, KC_PIPE),
+    COMBO(combo22, KC_BSLS),
 };
